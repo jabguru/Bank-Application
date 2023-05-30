@@ -1,0 +1,124 @@
+\hypertarget{class_bank_application_1_1_services_1_1_user_service}{}\doxysection{Bank\+Application.\+Services.\+User\+Service Class Reference}
+\label{class_bank_application_1_1_services_1_1_user_service}\index{BankApplication.Services.UserService@{BankApplication.Services.UserService}}
+
+
+This class handles everything relating to a user.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} $>$ \mbox{\hyperlink{class_bank_application_1_1_services_1_1_user_service_a2e5f2912f816a083eb4f1969ce8a8e23}{Read\+CSVFile}} ()
+\begin{DoxyCompactList}\small\item\em Reads existing CSV file where users are stored. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_user_service_a60f6a7886d9c24fdb513fb9290807ca3}{Write\+CSVFile}} (\mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em Adds a user to the CSV file. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_user_service_a43da8ed5244c7c00cf19f799644db392}{Register\+User}} (Dictionary$<$ string, string $>$ user\+Dict)
+\begin{DoxyCompactList}\small\item\em The method that registers a user and updates the database. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_user_service_a9751bdbf3ba1bf66298a393cec497d76}{Login\+User}} (Dictionary$<$ string, string $>$ user\+Dict)
+\begin{DoxyCompactList}\small\item\em This method logs in an existing user. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_user_service_a0fa9f0921b7da57cc09e2a9e18563e9a}{Get\+User}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em This method gets a user from the DB with a user\+Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_user_service_a65cf582d5d86932d127959e3b51d482f}\label{class_bank_application_1_1_services_1_1_user_service_a65cf582d5d86932d127959e3b51d482f}} 
+static string {\bfseries \+\_\+location} = @\char`\"{}C\+:\textbackslash{}\+Users\textbackslash{}\+Julius Alibrown\textbackslash{}\+Desktop\textbackslash{}class\textbackslash{}\+Bank\+Application\textbackslash{}db\textbackslash{}\+User.\+csv\char`\"{}
+\begin{DoxyCompactList}\small\item\em Location for the CSV file (database) where users are stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles everything relating to a user. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_user_service_a0fa9f0921b7da57cc09e2a9e18563e9a}\label{class_bank_application_1_1_services_1_1_user_service_a0fa9f0921b7da57cc09e2a9e18563e9a}} 
+\index{BankApplication.Services.UserService@{BankApplication.Services.UserService}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!BankApplication.Services.UserService@{BankApplication.Services.UserService}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} Bank\+Application.\+Services.\+User\+Service.\+Get\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method gets a user from the DB with a user\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The Id for the user to be retrieved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User object for the retreived user.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_user_service_a9751bdbf3ba1bf66298a393cec497d76}\label{class_bank_application_1_1_services_1_1_user_service_a9751bdbf3ba1bf66298a393cec497d76}} 
+\index{BankApplication.Services.UserService@{BankApplication.Services.UserService}!LoginUser@{LoginUser}}
+\index{LoginUser@{LoginUser}!BankApplication.Services.UserService@{BankApplication.Services.UserService}}
+\doxysubsubsection{\texorpdfstring{LoginUser()}{LoginUser()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} Bank\+Application.\+Services.\+User\+Service.\+Login\+User (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, string $>$}]{user\+Dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method logs in an existing user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Dict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Logged in user object.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_user_service_a2e5f2912f816a083eb4f1969ce8a8e23}\label{class_bank_application_1_1_services_1_1_user_service_a2e5f2912f816a083eb4f1969ce8a8e23}} 
+\index{BankApplication.Services.UserService@{BankApplication.Services.UserService}!ReadCSVFile@{ReadCSVFile}}
+\index{ReadCSVFile@{ReadCSVFile}!BankApplication.Services.UserService@{BankApplication.Services.UserService}}
+\doxysubsubsection{\texorpdfstring{ReadCSVFile()}{ReadCSVFile()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} $>$ Bank\+Application.\+Services.\+User\+Service.\+Read\+CSVFile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads existing CSV file where users are stored. 
+
+\begin{DoxyReturn}{Returns}
+Returns the list of all users.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_user_service_a43da8ed5244c7c00cf19f799644db392}\label{class_bank_application_1_1_services_1_1_user_service_a43da8ed5244c7c00cf19f799644db392}} 
+\index{BankApplication.Services.UserService@{BankApplication.Services.UserService}!RegisterUser@{RegisterUser}}
+\index{RegisterUser@{RegisterUser}!BankApplication.Services.UserService@{BankApplication.Services.UserService}}
+\doxysubsubsection{\texorpdfstring{RegisterUser()}{RegisterUser()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}} Bank\+Application.\+Services.\+User\+Service.\+Register\+User (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, string $>$}]{user\+Dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The method that registers a user and updates the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Dict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the registered user object.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_user_service_a60f6a7886d9c24fdb513fb9290807ca3}\label{class_bank_application_1_1_services_1_1_user_service_a60f6a7886d9c24fdb513fb9290807ca3}} 
+\index{BankApplication.Services.UserService@{BankApplication.Services.UserService}!WriteCSVFile@{WriteCSVFile}}
+\index{WriteCSVFile@{WriteCSVFile}!BankApplication.Services.UserService@{BankApplication.Services.UserService}}
+\doxysubsubsection{\texorpdfstring{WriteCSVFile()}{WriteCSVFile()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+User\+Service.\+Write\+CSVFile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bank_application_1_1_models_1_1_user}{User}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a user to the CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to be added to the database.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Julius Alibrown/\+Desktop/class/\+Bank\+Application/\+Services/User\+Service.\+cs\end{DoxyCompactItemize}

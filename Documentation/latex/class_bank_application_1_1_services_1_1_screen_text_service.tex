@@ -1,0 +1,349 @@
+\hypertarget{class_bank_application_1_1_services_1_1_screen_text_service}{}\doxysection{Bank\+Application.\+Services.\+Screen\+Text\+Service Class Reference}
+\label{class_bank_application_1_1_services_1_1_screen_text_service}\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+
+
+This class handles everything relating to displaying and getting inputs on the console.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a751fd47f003625c4d8c3caadbd8335a6}{Get\+Int\+Input}} (string text=\char`\"{}Input\+: \char`\"{}, bool clear=true)
+\begin{DoxyCompactList}\small\item\em This method handles getting integer inputs. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_afb73df5e2a153edf5d28ce77504e524f}{Get\+Double\+Input}} (string text=\char`\"{}Input\+: \char`\"{}, bool clear=true)
+\begin{DoxyCompactList}\small\item\em This method handles getting double inputs. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_ab6d98df3b6a3d04042cac35267ac9916}{Get\+String\+Input}} (string text=\char`\"{}Input\+: \char`\"{})
+\begin{DoxyCompactList}\small\item\em This method handles getting string inputs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a9c07b8fdffef66b16a60e37690ff2064}\label{class_bank_application_1_1_services_1_1_screen_text_service_a9c07b8fdffef66b16a60e37690ff2064}} 
+static void {\bfseries Welcome\+Text} ()
+\begin{DoxyCompactList}\small\item\em Displays Welcome Text. And perfomable actions (Login \& Register). \end{DoxyCompactList}\item 
+static Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_ab8daccf91af5da316600b9f5b3cc3507}{Login\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Displays Login Texts and recieves inputs. \end{DoxyCompactList}\item 
+static Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a0bf1f31dc0aa76411502075a3a8758bf}{Register\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Displays registration screen texts and recieves inputs. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_aa86b30bf0e28e3744e39b0a430c703fb}{Create\+Account\+Text}} ()
+\begin{DoxyCompactList}\small\item\em This method displays texts shown to create account. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a8c2144619e25ae416f279d2aca2297da}{Dashboard\+Text}} (string name)
+\begin{DoxyCompactList}\small\item\em This method displays dashboard texts and recieves input of the action to be performed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a770bad5cae1929db7f671fe5c1d7ea1b}{Check\+Balance\+Text}} (double balance, bool other=false)
+\begin{DoxyCompactList}\small\item\em This method displays available balance. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_ae9c04db52d7dee0c9ba7bf74416d3be9}{Deposit\+Text}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the deposit amount. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a82afbfd68b451533b1e2a155ae5c780e}{Withdraw\+Text}} ()
+\begin{DoxyCompactList}\small\item\em This method gets the withdrawal amount. \end{DoxyCompactList}\item 
+static Dictionary$<$ string, dynamic $>$ \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a8fafa63bb8f16b3935077d0d4a44181d}{Transfer\+Text}} ()
+\begin{DoxyCompactList}\small\item\em This method gets transfer details. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a1918448ec744241a526684b96e9db612}{Transfer\+Confirmation}} (string reciever\+Name, double amount)
+\begin{DoxyCompactList}\small\item\em This method displays transfer confirmation and recives input. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a5a379ba55984ad56472baba5689da6fb}{Back\+To\+Main\+Menu\+Text}} ()
+\begin{DoxyCompactList}\small\item\em This method displays back to main menu options. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_adc789968e4cdf426c07f702855ae98c9}\label{class_bank_application_1_1_services_1_1_screen_text_service_adc789968e4cdf426c07f702855ae98c9}} 
+static void {\bfseries Wrong\+Input} ()
+\begin{DoxyCompactList}\small\item\em This method displays wrong input text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_ac16f8257851b4f2bc9000e11db3c390f}\label{class_bank_application_1_1_services_1_1_screen_text_service_ac16f8257851b4f2bc9000e11db3c390f}} 
+static void {\bfseries Registration\+Successful} ()
+\begin{DoxyCompactList}\small\item\em This method clears console and displays account created successfully text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_abc6a2ff5c6c0e3a81784b2fefc004efe}\label{class_bank_application_1_1_services_1_1_screen_text_service_abc6a2ff5c6c0e3a81784b2fefc004efe}} 
+static void {\bfseries Registration\+Failed} ()
+\begin{DoxyCompactList}\small\item\em This method clears console and displays registration failed text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_ac41512a134103f4ae1efb40ea6486984}\label{class_bank_application_1_1_services_1_1_screen_text_service_ac41512a134103f4ae1efb40ea6486984}} 
+static void {\bfseries Login\+Failed} ()
+\begin{DoxyCompactList}\small\item\em This method clears console and displays login failed text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_ac747059b7932dafb8c83bb5743c4ca81}\label{class_bank_application_1_1_services_1_1_screen_text_service_ac747059b7932dafb8c83bb5743c4ca81}} 
+static void {\bfseries Deposit\+Failed} ()
+\begin{DoxyCompactList}\small\item\em This method clears console and displays deposit failed text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a01df69cddb1bba07c8d6fc0bdc7ee06e}\label{class_bank_application_1_1_services_1_1_screen_text_service_a01df69cddb1bba07c8d6fc0bdc7ee06e}} 
+static void {\bfseries Withdrawal\+Failed} ()
+\begin{DoxyCompactList}\small\item\em This method clears console and displays withdrawal failed text. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a9cbeeae5268c0bec8359947165efd292}{Deposit\+Successful}} (double amount)
+\begin{DoxyCompactList}\small\item\em This method clears console and dispalys deposit successful text. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_a1b336d2b51d159ffeb7bc969b8ae9b52}{Withdawal\+Successful}} (double amount)
+\begin{DoxyCompactList}\small\item\em This method clears console and displays withdrawal successful text. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_aea2c4bd3e0d294f9c35e9f35a8885b13}{Transfer\+Successful}} (double amount)
+\begin{DoxyCompactList}\small\item\em This method clears console and displays transfer successful text. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_screen_text_service_adef15a987c7b53b2a6c7b57a7713a6bf}{Transfer\+Account\+Not\+Found\+Error}} (int account\+Number)
+\begin{DoxyCompactList}\small\item\em This method clears console and displays transfer account not found error text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a0b721459fc89b39f1485cf604be52803}\label{class_bank_application_1_1_services_1_1_screen_text_service_a0b721459fc89b39f1485cf604be52803}} 
+static void {\bfseries Transfer\+Failed} ()
+\begin{DoxyCompactList}\small\item\em This method displays transfer failed text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a46125604d5d716df92d55b415f7afd8e}\label{class_bank_application_1_1_services_1_1_screen_text_service_a46125604d5d716df92d55b415f7afd8e}} 
+static string {\bfseries amount\+Text} = \$\char`\"{}mount\+:\{Bank\+Service.\+currency\}\char`\"{}
+\begin{DoxyCompactList}\small\item\em A string with currency used by input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles everything relating to displaying and getting inputs on the console. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a5a379ba55984ad56472baba5689da6fb}\label{class_bank_application_1_1_services_1_1_screen_text_service_a5a379ba55984ad56472baba5689da6fb}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!BackToMainMenuText@{BackToMainMenuText}}
+\index{BackToMainMenuText@{BackToMainMenuText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{BackToMainMenuText()}{BackToMainMenuText()}}
+{\footnotesize\ttfamily static int Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Back\+To\+Main\+Menu\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method displays back to main menu options. 
+
+\begin{DoxyReturn}{Returns}
+Returns the value of input. 1 -\/ Main Menu, 2 -\/ Exit.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a770bad5cae1929db7f671fe5c1d7ea1b}\label{class_bank_application_1_1_services_1_1_screen_text_service_a770bad5cae1929db7f671fe5c1d7ea1b}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!CheckBalanceText@{CheckBalanceText}}
+\index{CheckBalanceText@{CheckBalanceText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{CheckBalanceText()}{CheckBalanceText()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Check\+Balance\+Text (\begin{DoxyParamCaption}\item[{double}]{balance,  }\item[{bool}]{other = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method displays available balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em balance} & User\textquotesingle{}s available balance.\\
+\hline
+{\em other} & Displays extra text if other is true.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_aa86b30bf0e28e3744e39b0a430c703fb}\label{class_bank_application_1_1_services_1_1_screen_text_service_aa86b30bf0e28e3744e39b0a430c703fb}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!CreateAccountText@{CreateAccountText}}
+\index{CreateAccountText@{CreateAccountText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{CreateAccountText()}{CreateAccountText()}}
+{\footnotesize\ttfamily static int Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Create\+Account\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method displays texts shown to create account. 
+
+\begin{DoxyReturn}{Returns}
+Returns the value of the account type to be created.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a8c2144619e25ae416f279d2aca2297da}\label{class_bank_application_1_1_services_1_1_screen_text_service_a8c2144619e25ae416f279d2aca2297da}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!DashboardText@{DashboardText}}
+\index{DashboardText@{DashboardText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{DashboardText()}{DashboardText()}}
+{\footnotesize\ttfamily static int Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Dashboard\+Text (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method displays dashboard texts and recieves input of the action to be performed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Logged-\/in user\textquotesingle{}s name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the value of the banking action to be performed.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a9cbeeae5268c0bec8359947165efd292}\label{class_bank_application_1_1_services_1_1_screen_text_service_a9cbeeae5268c0bec8359947165efd292}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!DepositSuccessful@{DepositSuccessful}}
+\index{DepositSuccessful@{DepositSuccessful}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{DepositSuccessful()}{DepositSuccessful()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Deposit\+Successful (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method clears console and dispalys deposit successful text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount Deposited.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_ae9c04db52d7dee0c9ba7bf74416d3be9}\label{class_bank_application_1_1_services_1_1_screen_text_service_ae9c04db52d7dee0c9ba7bf74416d3be9}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!DepositText@{DepositText}}
+\index{DepositText@{DepositText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{DepositText()}{DepositText()}}
+{\footnotesize\ttfamily static double Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Deposit\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method gets the deposit amount. 
+
+\begin{DoxyReturn}{Returns}
+Returns the amount to be deposited.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_afb73df5e2a153edf5d28ce77504e524f}\label{class_bank_application_1_1_services_1_1_screen_text_service_afb73df5e2a153edf5d28ce77504e524f}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!GetDoubleInput@{GetDoubleInput}}
+\index{GetDoubleInput@{GetDoubleInput}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{GetDoubleInput()}{GetDoubleInput()}}
+{\footnotesize\ttfamily static double Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Get\+Double\+Input (\begin{DoxyParamCaption}\item[{string}]{text = {\ttfamily \char`\"{}Input\+:~\char`\"{}},  }\item[{bool}]{clear = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method handles getting double inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to display in the console.\\
+\hline
+{\em clear} & Clears console if true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a751fd47f003625c4d8c3caadbd8335a6}\label{class_bank_application_1_1_services_1_1_screen_text_service_a751fd47f003625c4d8c3caadbd8335a6}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!GetIntInput@{GetIntInput}}
+\index{GetIntInput@{GetIntInput}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{GetIntInput()}{GetIntInput()}}
+{\footnotesize\ttfamily static int Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Get\+Int\+Input (\begin{DoxyParamCaption}\item[{string}]{text = {\ttfamily \char`\"{}Input\+:~\char`\"{}},  }\item[{bool}]{clear = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method handles getting integer inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to display in the console.\\
+\hline
+{\em clear} & Clears console if true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_ab6d98df3b6a3d04042cac35267ac9916}\label{class_bank_application_1_1_services_1_1_screen_text_service_ab6d98df3b6a3d04042cac35267ac9916}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!GetStringInput@{GetStringInput}}
+\index{GetStringInput@{GetStringInput}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{GetStringInput()}{GetStringInput()}}
+{\footnotesize\ttfamily static string Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Get\+String\+Input (\begin{DoxyParamCaption}\item[{string}]{text = {\ttfamily \char`\"{}Input\+:~\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method handles getting string inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to display in the console.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_ab8daccf91af5da316600b9f5b3cc3507}\label{class_bank_application_1_1_services_1_1_screen_text_service_ab8daccf91af5da316600b9f5b3cc3507}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!LoginText@{LoginText}}
+\index{LoginText@{LoginText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{LoginText()}{LoginText()}}
+{\footnotesize\ttfamily static Dictionary$<$ string, string $>$ Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Login\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Displays Login Texts and recieves inputs. 
+
+\begin{DoxyReturn}{Returns}
+Returns a dictionary containing login details (email \& password)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a0bf1f31dc0aa76411502075a3a8758bf}\label{class_bank_application_1_1_services_1_1_screen_text_service_a0bf1f31dc0aa76411502075a3a8758bf}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!RegisterText@{RegisterText}}
+\index{RegisterText@{RegisterText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{RegisterText()}{RegisterText()}}
+{\footnotesize\ttfamily static Dictionary$<$ string, string $>$ Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Register\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Displays registration screen texts and recieves inputs. 
+
+\begin{DoxyReturn}{Returns}
+Returns a dictionary of the registration details (full name, email and password).
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_adef15a987c7b53b2a6c7b57a7713a6bf}\label{class_bank_application_1_1_services_1_1_screen_text_service_adef15a987c7b53b2a6c7b57a7713a6bf}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!TransferAccountNotFoundError@{TransferAccountNotFoundError}}
+\index{TransferAccountNotFoundError@{TransferAccountNotFoundError}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{TransferAccountNotFoundError()}{TransferAccountNotFoundError()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Transfer\+Account\+Not\+Found\+Error (\begin{DoxyParamCaption}\item[{int}]{account\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method clears console and displays transfer account not found error text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+Number} & Account Number inputed.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a1918448ec744241a526684b96e9db612}\label{class_bank_application_1_1_services_1_1_screen_text_service_a1918448ec744241a526684b96e9db612}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!TransferConfirmation@{TransferConfirmation}}
+\index{TransferConfirmation@{TransferConfirmation}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{TransferConfirmation()}{TransferConfirmation()}}
+{\footnotesize\ttfamily static int Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Transfer\+Confirmation (\begin{DoxyParamCaption}\item[{string}]{reciever\+Name,  }\item[{double}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method displays transfer confirmation and recives input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reciever\+Name} & Reciever\textquotesingle{}s full name\\
+\hline
+{\em amount} & Amount to be transfered.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the value for confirmation. 1 -\/ Yes, 2 -\/ No.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_aea2c4bd3e0d294f9c35e9f35a8885b13}\label{class_bank_application_1_1_services_1_1_screen_text_service_aea2c4bd3e0d294f9c35e9f35a8885b13}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!TransferSuccessful@{TransferSuccessful}}
+\index{TransferSuccessful@{TransferSuccessful}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{TransferSuccessful()}{TransferSuccessful()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Transfer\+Successful (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method clears console and displays transfer successful text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount transferred.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a8fafa63bb8f16b3935077d0d4a44181d}\label{class_bank_application_1_1_services_1_1_screen_text_service_a8fafa63bb8f16b3935077d0d4a44181d}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!TransferText@{TransferText}}
+\index{TransferText@{TransferText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{TransferText()}{TransferText()}}
+{\footnotesize\ttfamily static Dictionary$<$ string, dynamic $>$ Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Transfer\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method gets transfer details. 
+
+\begin{DoxyReturn}{Returns}
+Returns a dictionary containing the transfer informations -\/ amount and reciever\textquotesingle{}s account number.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a1b336d2b51d159ffeb7bc969b8ae9b52}\label{class_bank_application_1_1_services_1_1_screen_text_service_a1b336d2b51d159ffeb7bc969b8ae9b52}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!WithdawalSuccessful@{WithdawalSuccessful}}
+\index{WithdawalSuccessful@{WithdawalSuccessful}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{WithdawalSuccessful()}{WithdawalSuccessful()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Withdawal\+Successful (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method clears console and displays withdrawal successful text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount Withdrawn.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_screen_text_service_a82afbfd68b451533b1e2a155ae5c780e}\label{class_bank_application_1_1_services_1_1_screen_text_service_a82afbfd68b451533b1e2a155ae5c780e}} 
+\index{BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}!WithdrawText@{WithdrawText}}
+\index{WithdrawText@{WithdrawText}!BankApplication.Services.ScreenTextService@{BankApplication.Services.ScreenTextService}}
+\doxysubsubsection{\texorpdfstring{WithdrawText()}{WithdrawText()}}
+{\footnotesize\ttfamily static double Bank\+Application.\+Services.\+Screen\+Text\+Service.\+Withdraw\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method gets the withdrawal amount. 
+
+\begin{DoxyReturn}{Returns}
+Returns the amount to be withdrawn.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Julius Alibrown/\+Desktop/class/\+Bank\+Application/\+Services/Screen\+Text\+Service.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,229 @@
+\hypertarget{class_bank_application_1_1_services_1_1_account_service}{}\doxysection{Bank\+Application.\+Services.\+Account\+Service Class Reference}
+\label{class_bank_application_1_1_services_1_1_account_service}\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+
+
+This class handles things related to a user\textquotesingle{}s account.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} $>$ \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_ac4cdfccb6b7b803771fc4586b558f335}{Read\+CSVFile}} ()
+\begin{DoxyCompactList}\small\item\em Reads existing CSV file where accounts are stored. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a44db338d959db6a3eb60395a343ede96}{Write\+CSVFile}} (\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} account)
+\begin{DoxyCompactList}\small\item\em Adds an account to the CSV file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a9070a728f04c6339602ff0894b77cd82}{Overwrite\+CSVFile}} (List$<$ \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} $>$ accounts)
+\begin{DoxyCompactList}\small\item\em This method overwrites the DB with a list of accounts. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a47b7707b4c8127767fc4f980954ed344}{Create\+Account}} (int user\+Id, int account\+Type)
+\begin{DoxyCompactList}\small\item\em This method creates a new account with a user ID and account type. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a0eda313f9274ba3174c968cc2347883f}{Get\+User\+Account}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em This method gets a user account with the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a5b5a5368076509d0264f5dadff45d7bb}{Get\+User\+Account\+From\+Account\+Number}} (int account\+Number)
+\begin{DoxyCompactList}\small\item\em This method gets a user account with the user\textquotesingle{}s account number. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a5d0b08030c1bdaf7263d0ffa01faa6f2}{Deposit}} (double amount, \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} account)
+\begin{DoxyCompactList}\small\item\em This method deposits an amount to the user\textquotesingle{}s account. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a1bccb4849081f770ed92ab0306846564}{Withdraw}} (double amount, \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} account)
+\begin{DoxyCompactList}\small\item\em This method withdraws an ammount from the user\textquotesingle{}s account. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_aa8f004de2d47be3dcd875673200d04aa}{Transfer}} (Dictionary$<$ string, dynamic $>$ transfer\+Details, \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} account)
+\begin{DoxyCompactList}\small\item\em This method transfers an amount from logged-\/in user\textquotesingle{}s account to another account. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_bank_application_1_1_services_1_1_account_service_a5d7c90e5f26e018026c9b63a1d3b0b82}{Update\+Account}} (\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} account)
+\begin{DoxyCompactList}\small\item\em This method updates a user account with new account details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a9fd781ff1c74a6bb28b035e73e380f4b}\label{class_bank_application_1_1_services_1_1_account_service_a9fd781ff1c74a6bb28b035e73e380f4b}} 
+static string {\bfseries \+\_\+location} = @\char`\"{}C\+:\textbackslash{}\+Users\textbackslash{}\+Julius Alibrown\textbackslash{}\+Desktop\textbackslash{}class\textbackslash{}\+Bank\+Application\textbackslash{}db\textbackslash{}\+Account.\+csv\char`\"{}
+\begin{DoxyCompactList}\small\item\em Location for the CSV file (database) where accounts are stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles things related to a user\textquotesingle{}s account. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a47b7707b4c8127767fc4f980954ed344}\label{class_bank_application_1_1_services_1_1_account_service_a47b7707b4c8127767fc4f980954ed344}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!CreateAccount@{CreateAccount}}
+\index{CreateAccount@{CreateAccount}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{CreateAccount()}{CreateAccount()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} Bank\+Application.\+Services.\+Account\+Service.\+Create\+Account (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{int}]{account\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method creates a new account with a user ID and account type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of the owning user.\\
+\hline
+{\em account\+Type} & Value for the type of account to be created.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the created account object or null if an error occurs.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a5d0b08030c1bdaf7263d0ffa01faa6f2}\label{class_bank_application_1_1_services_1_1_account_service_a5d0b08030c1bdaf7263d0ffa01faa6f2}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!Deposit@{Deposit}}
+\index{Deposit@{Deposit}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{Deposit()}{Deposit()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} Bank\+Application.\+Services.\+Account\+Service.\+Deposit (\begin{DoxyParamCaption}\item[{double}]{amount,  }\item[{\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}}}]{account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method deposits an amount to the user\textquotesingle{}s account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount to be deposited.\\
+\hline
+{\em account} & User\textquotesingle{}s account.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a0eda313f9274ba3174c968cc2347883f}\label{class_bank_application_1_1_services_1_1_account_service_a0eda313f9274ba3174c968cc2347883f}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!GetUserAccount@{GetUserAccount}}
+\index{GetUserAccount@{GetUserAccount}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{GetUserAccount()}{GetUserAccount()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} Bank\+Application.\+Services.\+Account\+Service.\+Get\+User\+Account (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method gets a user account with the user\textquotesingle{}s ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID of owning user.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns user account or null if an error occurs.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a5b5a5368076509d0264f5dadff45d7bb}\label{class_bank_application_1_1_services_1_1_account_service_a5b5a5368076509d0264f5dadff45d7bb}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!GetUserAccountFromAccountNumber@{GetUserAccountFromAccountNumber}}
+\index{GetUserAccountFromAccountNumber@{GetUserAccountFromAccountNumber}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{GetUserAccountFromAccountNumber()}{GetUserAccountFromAccountNumber()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} Bank\+Application.\+Services.\+Account\+Service.\+Get\+User\+Account\+From\+Account\+Number (\begin{DoxyParamCaption}\item[{int}]{account\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method gets a user account with the user\textquotesingle{}s account number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account\+Number} & User\textquotesingle{}s Account number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns user account or null if an error occurs.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a9070a728f04c6339602ff0894b77cd82}\label{class_bank_application_1_1_services_1_1_account_service_a9070a728f04c6339602ff0894b77cd82}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!OverwriteCSVFile@{OverwriteCSVFile}}
+\index{OverwriteCSVFile@{OverwriteCSVFile}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{OverwriteCSVFile()}{OverwriteCSVFile()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Account\+Service.\+Overwrite\+CSVFile (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} $>$}]{accounts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method overwrites the DB with a list of accounts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em accounts} & List of accounts to be added to the DB.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_ac4cdfccb6b7b803771fc4586b558f335}\label{class_bank_application_1_1_services_1_1_account_service_ac4cdfccb6b7b803771fc4586b558f335}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!ReadCSVFile@{ReadCSVFile}}
+\index{ReadCSVFile@{ReadCSVFile}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{ReadCSVFile()}{ReadCSVFile()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} $>$ Bank\+Application.\+Services.\+Account\+Service.\+Read\+CSVFile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads existing CSV file where accounts are stored. 
+
+\begin{DoxyReturn}{Returns}
+Returns the list of all accounts.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_aa8f004de2d47be3dcd875673200d04aa}\label{class_bank_application_1_1_services_1_1_account_service_aa8f004de2d47be3dcd875673200d04aa}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!Transfer@{Transfer}}
+\index{Transfer@{Transfer}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{Transfer()}{Transfer()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} Bank\+Application.\+Services.\+Account\+Service.\+Transfer (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, dynamic $>$}]{transfer\+Details,  }\item[{\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}}}]{account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method transfers an amount from logged-\/in user\textquotesingle{}s account to another account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transfer\+Details} & A dictionary that contains the amount to be transferred and the reciever\textquotesingle{}s account number.\\
+\hline
+{\em account} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns user account or null if an error occurs.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a5d7c90e5f26e018026c9b63a1d3b0b82}\label{class_bank_application_1_1_services_1_1_account_service_a5d7c90e5f26e018026c9b63a1d3b0b82}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!UpdateAccount@{UpdateAccount}}
+\index{UpdateAccount@{UpdateAccount}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{UpdateAccount()}{UpdateAccount()}}
+{\footnotesize\ttfamily static bool Bank\+Application.\+Services.\+Account\+Service.\+Update\+Account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}}}]{account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method updates a user account with new account details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account} & Account object with udpated details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful and false if not.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a1bccb4849081f770ed92ab0306846564}\label{class_bank_application_1_1_services_1_1_account_service_a1bccb4849081f770ed92ab0306846564}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!Withdraw@{Withdraw}}
+\index{Withdraw@{Withdraw}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{Withdraw()}{Withdraw()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}} Bank\+Application.\+Services.\+Account\+Service.\+Withdraw (\begin{DoxyParamCaption}\item[{double}]{amount,  }\item[{\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}}}]{account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method withdraws an ammount from the user\textquotesingle{}s account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Amount to be withdrawn.\\
+\hline
+{\em account} & User\textquotesingle{}s account.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_application_1_1_services_1_1_account_service_a44db338d959db6a3eb60395a343ede96}\label{class_bank_application_1_1_services_1_1_account_service_a44db338d959db6a3eb60395a343ede96}} 
+\index{BankApplication.Services.AccountService@{BankApplication.Services.AccountService}!WriteCSVFile@{WriteCSVFile}}
+\index{WriteCSVFile@{WriteCSVFile}!BankApplication.Services.AccountService@{BankApplication.Services.AccountService}}
+\doxysubsubsection{\texorpdfstring{WriteCSVFile()}{WriteCSVFile()}}
+{\footnotesize\ttfamily static void Bank\+Application.\+Services.\+Account\+Service.\+Write\+CSVFile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bank_application_1_1_models_1_1_account}{Account}}}]{account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds an account to the CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em account} & Account to be added to the database.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Julius Alibrown/\+Desktop/class/\+Bank\+Application/\+Services/Account\+Service.\+cs\end{DoxyCompactItemize}
