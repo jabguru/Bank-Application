@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BankApplication</name>
+    </assembly>
+    <members>
+        <member name="T:BankApplication.Services.AccountService">
+            <summary>
+            This class handles things related to a user's account.
+            </summary>
+        </member>
+        <member name="F:BankApplication.Services.AccountService._location">
+            <summary>
+            Location for the CSV file (database) where accounts are stored.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.ReadCSVFile">
+            <summary>
+            Reads existing CSV file where accounts are stored.
+            </summary>
+            <returns>Returns the list of all accounts.</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.WriteCSVFile(BankApplication.Models.Account)">
+            <summary>
+            Adds an account to the CSV file.
+            </summary>
+            <param name="account">Account to be added to the database.</param>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.OverwriteCSVFile(System.Collections.Generic.List{BankApplication.Models.Account})">
+            <summary>
+            This method overwrites the DB with a list of accounts
+            </summary>
+            <param name="accounts">List of accounts to be added to the DB.</param>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.CreateAccount(System.Int32,System.Int32)">
+            <summary>
+            This method creates a new account with a user ID and account type.
+            </summary>
+            <param name="userId">ID of the owning user.</param>
+            <param name="accountType">Value for the type of account to be created.</param>
+            <returns>Returns the created account object or null if an error occurs.</returns>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.GetUserAccount(System.Int32)">
+            <summary>
+            This method gets a user account with the user's ID.
+            </summary>
+            <param name="userId">ID of owning user.</param>
+            <returns>Returns user account or null if an error occurs.</returns>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.GetUserAccountFromAccountNumber(System.Int32)">
+            <summary>
+            This method gets a user account with the user's account number.
+            </summary>
+            <param name="accountNumber">User's Account number.</param>
+            <returns>Returns user account or null if an error occurs.</returns>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.Deposit(System.Double,BankApplication.Models.Account)">
+            <summary>
+            This method deposits an amount to the user's account.
+            </summary>
+            <param name="amount">Amount to be deposited.</param>
+            <param name="account">User's account.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.Withdraw(System.Double,BankApplication.Models.Account)">
+            <summary>
+            This method withdraws an ammount from the user's account.
+            </summary>
+            <param name="amount">Amount to be withdrawn.</param>
+            <param name="account">User's account.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.Transfer(System.Collections.Generic.Dictionary{System.String,System.Object},BankApplication.Models.Account)">
+            <summary>
+            This method transfers an amount from logged-in user's account to another account.
+            </summary>
+            <param name="transferDetails">A dictionary that contains the amount to be transferred and the reciever's account number.</param>
+            <param name="account"></param>
+            <returns>Returns user account or null if an error occurs.</returns>
+        </member>
+        <member name="M:BankApplication.Services.AccountService.UpdateAccount(BankApplication.Models.Account)">
+            <summary>
+            This method updates a user account with new account details.
+            </summary>
+            <param name="account">Account object with udpated details</param>
+            <returns>Returns true if successful and false if not.</returns>
+        </member>
+        <member name="T:BankApplication.Services.BankService">
+            <summary>
+            This class handles everything relating to services rendered by the bank.
+            </summary>
+        </member>
+        <member name="F:BankApplication.Services.BankService.currency">
+            <summary>
+            The currency being used by the bank.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Start">
+            <summary>
+            The bank app starts running from here.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.BankService.RegisterOrLogin(System.Int32)">
+            <summary>
+            This method handles user's choice to login or register.
+            </summary>
+            <param name="value">The value indicates if user is to login or register. 1 - Login, 2 - Register.</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Register">
+            <summary>
+            This method registers a new user.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Login">
+            <summary>
+            This method logs in a registered user.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Dashboard(BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+            This method shows user's dashboard to select actions to perform.
+            </summary>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account.</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.DashboardAction(System.Int32,BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+            This method handles the dashboard action to perfom based on an input value.
+            </summary>
+            <param name="value">Input value to decide bank action to perform. 1 - Check balance, 2 - Deposit, 3 - Withdraw, 4 - Transfer, 5 - Exit.</param>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account.</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.CheckBalance(BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+            This method checks user's account balance.
+            </summary>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Deposit(BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+            This method allows users make deposit to their accounts.
+            </summary>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Withdraw(BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+             This method handles user's withdrawal from account.
+            </summary>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.Transfer(BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+            This method handles transfer from logged-in user's account to another.
+            </summary>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account</param>
+        </member>
+        <member name="M:BankApplication.Services.BankService.BackToMainMenu(BankApplication.Models.User,BankApplication.Models.Account)">
+            <summary>
+            This method makes it possible for the user to go back to the Main Menu.
+            </summary>
+            <param name="user">Logged in user.</param>
+            <param name="account">Logged in user's account</param>
+        </member>
+        <member name="T:BankApplication.Services.ScreenTextService">
+            <summary>
+            This class handles everything relating to displaying and getting inputs on the console.
+            </summary>
+        </member>
+        <member name="F:BankApplication.Services.ScreenTextService.amountText">
+            <summary>
+            A string with currency used by input.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.GetIntInput(System.String,System.Boolean)">
+            <summary>
+            This method handles getting integer inputs.
+            </summary>
+            <param name="text">Text to display in the console.</param>
+            <param name="clear">Clears console if true.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.GetDoubleInput(System.String,System.Boolean)">
+            <summary>
+            This method handles getting double inputs
+            </summary>
+            <param name="text">Text to display in the console.</param>
+            <param name="clear">Clears console if true.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.GetStringInput(System.String)">
+            <summary>
+            This method handles getting string inputs
+            </summary>
+            <param name="text">Text to display in the console.</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:BankApplication.Services.ScreenTextService.WelcomeText" -->
+        <!-- Badly formed XML comment ignored for member "M:BankApplication.Services.ScreenTextService.LoginText" -->
+        <member name="M:BankApplication.Services.ScreenTextService.RegisterText">
+            <summary>
+            Displays registration screen texts and recieves inputs.
+            </summary>
+            <returns>Returns a dictionary of the registration details (full name, email and password).</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.CreateAccountText">
+            <summary>
+            This method displays texts shown to create account.
+            </summary>
+            <returns>Returns the value of the account type to be created.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.DashboardText(System.String)">
+            <summary>
+            This method displays dashboard texts and recieves input of the action to be performed.
+            </summary>
+            <param name="name">Logged-in user's name.</param>
+            <returns>Returns the value of the banking action to be performed.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.CheckBalanceText(System.Double,System.Boolean)">
+            <summary>
+            This method displays available balance.
+            </summary>
+            <param name="balance">User's available balance.</param>
+            <param name="other">Displays extra text if other is true.</param>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.DepositText">
+            <summary>
+            This method gets the deposit amount.
+            </summary>
+            <returns>Returns the amount to be deposited.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.WithdrawText">
+            <summary>
+            This method gets the withdrawal amount.
+            </summary>
+            <returns>Returns the amount to be withdrawn.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.TransferText">
+            <summary>
+            This method gets transfer details.
+            </summary>
+            <returns>Returns a dictionary containing the transfer informations - amount and reciever's account number.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.TransferConfirmation(System.String,System.Double)">
+            <summary>
+            This method displays transfer confirmation and recives input.
+            </summary>
+            <param name="recieverName">Reciever's full name</param>
+            <param name="amount">Amount to be transfered.</param>
+            <returns>Returns the value for confirmation. 1 - Yes, 2 - No.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.BackToMainMenuText">
+            <summary>
+            This method displays back to main menu options. 
+            </summary>
+            <returns>Returns the value of input. 1 - Main Menu, 2 - Exit.</returns>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.WrongInput">
+            <summary>
+            This method displays wrong input text.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.RegistrationSuccessful">
+            <summary>
+            This method clears console and displays account created successfully text.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.RegistrationFailed">
+            <summary>
+            This method clears console and displays registration failed text.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.LoginFailed">
+            <summary>
+            This method clears console and displays login failed text.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.DepositFailed">
+            <summary>
+            This method clears console and displays deposit failed text.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.WithdrawalFailed">
+            <summary>
+            This method clears console and displays withdrawal failed text.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.DepositSuccessful(System.Double)">
+            <summary>
+            This method clears console and dispalys deposit successful text.
+            </summary>
+            <param name="amount">Amount Deposited.</param>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.WithdawalSuccessful(System.Double)">
+            <summary>
+            This method clears console and displays withdrawal successful text.
+            </summary>
+            <param name="amount">Amount Withdrawn.</param>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.TransferSuccessful(System.Double)">
+            <summary>
+            This method clears console and displays transfer successful text.
+            </summary>
+            <param name="amount">Amount transferred.</param>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.TransferAccountNotFoundError(System.Int32)">
+            <summary>
+            This method clears console and displays transfer account not found error text.
+            </summary>
+            <param name="accountNumber">Account Number inputed.</param>
+        </member>
+        <member name="M:BankApplication.Services.ScreenTextService.TransferFailed">
+            <summary>
+            This method displays transfer failed text.
+            </summary>
+        </member>
+        <member name="T:BankApplication.Services.UserService">
+            <summary>
+            This class handles everything relating to a user.
+            </summary>
+        </member>
+        <member name="F:BankApplication.Services.UserService._location">
+            <summary>
+            Location for the CSV file (database) where users are stored.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Services.UserService.ReadCSVFile">
+            <summary>
+            Reads existing CSV file where users are stored.
+            </summary>
+            <returns>Returns the list of all users.</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:BankApplication.Services.UserService.WriteCSVFile(BankApplication.Models.User)">
+            <summary>
+            Adds a user to the CSV file.
+            </summary>
+            <param name="user">User to be added to the database.</param>
+        </member>
+        <member name="M:BankApplication.Services.UserService.RegisterUser(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            The method that registers a user and updates the database.
+            </summary>
+            <param name="userDict"></param>
+            <returns>Returns the registered user object.</returns>
+        </member>
+        <member name="M:BankApplication.Services.UserService.LoginUser(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            This method logs in an existing user.
+            </summary>
+            <param name="userDict"></param>
+            <returns>Logged in user object.</returns>
+        </member>
+        <member name="M:BankApplication.Services.UserService.GetUser(System.Int32)">
+            <summary>
+            This method gets a user from the DB with a userId
+            </summary>
+            <param name="userId">The Id for the user to be retrieved.</param>
+            <returns>User object for the retreived user.</returns>
+        </member>
+    </members>
+</doc>

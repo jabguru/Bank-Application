@@ -1,0 +1,36 @@
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\BankApplication.exe
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\BankApplication.deps.json
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\BankApplication.runtimeconfig.json
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\BankApplication.pdb
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.csproj.AssemblyReference.cache
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.AssemblyInfoInputs.cache
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.AssemblyInfo.cs
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.csproj.CoreCompileInputs.cache
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\refint\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.pdb
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.genruntimeconfig.cache
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\ref\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\CsvHelper.dll
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\obj\Debug\net7.0\BankApplication.csproj.CopyComplete
+C:\Users\Julius Alibrown\Desktop\class\BankApplication\bin\Debug\net7.0\BankApplication.xml
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\BankApplication.exe
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\BankApplication.xml
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\BankApplication.deps.json
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\BankApplication.runtimeconfig.json
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\BankApplication.pdb
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\bin\Debug\net7.0\CsvHelper.dll
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.csproj.AssemblyReference.cache
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.AssemblyInfoInputs.cache
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.AssemblyInfo.cs
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.csproj.CoreCompileInputs.cache
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.csproj.CopyComplete
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\refint\BankApplication.dll
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.pdb
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\BankApplication.genruntimeconfig.cache
+C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\obj\Debug\net7.0\ref\BankApplication.dll
