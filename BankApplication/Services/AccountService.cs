@@ -18,7 +18,7 @@ namespace BankApplication.Services
         /// <summary>
         /// Location for the CSV file (database) where accounts are stored.
         /// </summary>
-        private static string _location = @"C:\Users\Julius Alibrown\Desktop\class\BankApplication\db\Account.csv";
+        private static string _location = @"C:\Users\Julius Alibrown\Desktop\class\Bank Application\BankApplication\db\Account.csv";
 
         /// <summary>
         /// Reads existing CSV file where accounts are stored.
